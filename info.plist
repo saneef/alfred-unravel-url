@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.saneef.unravel</string>
+	<string>com.saneef.unravel-url</string>
 	<key>category</key>
 	<string>Productivity</string>
 	<key>connections</key>
@@ -270,7 +270,11 @@
 	</dict>
 	<key>userconfigurationconfig</key>
 	<array/>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0.0</string>
 	<key>webaddress</key>
-	<string>https://saneef.com</string>
+	<string>https://github.com/saneef/alfred-unravel-url</string>
 </dict>
 </plist>
