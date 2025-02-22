@@ -7,7 +7,7 @@ require 'json'
 query = ARGV[0]
 
 error_code = "UNRAVEL_URL_ERROR"
-$unravel_url_base_uri = "https://unravelurl.com/api/resolve.json" # https://unravelurl.com/api/resolve.json?url=https://saneef.me
+$unravel_url_base_uri = "https://unravelurl.com/api/resolve.json"
 
 def parse_response(data)
 	json_string = JSON.parse(data)
