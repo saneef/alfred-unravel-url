@@ -8,6 +8,32 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>30A2102A-AD6C-40F8-B4C2-F5EF5B291BAE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DE777701-C3E5-4F5C-B51F-4241A896A12D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3701670F-91FC-44E1-A463-3E05437264FD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BA2045AE-2450-4740-BA4B-EB26A167BAD2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>7E7A9D9B-1744-437E-8045-1F8E1EDA1D15</key>
 		<array>
 			<dict>
@@ -25,7 +51,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>BA2045AE-2450-4740-BA4B-EB26A167BAD2</string>
+				<string>C1150C33-2C66-496C-A1F7-E0FE38D79DCD</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -59,11 +85,62 @@
 				<false/>
 			</dict>
 		</array>
+		<key>A533B797-E4EE-46F6-9D90-7FAC90495E2C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3701670F-91FC-44E1-A463-3E05437264FD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>E57FB74D-CB8F-4B4E-845B-93B4BB1E1D0F</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C9AEC01B-6268-4CA8-AA21-8BF806AED5C5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>BA2045AE-2450-4740-BA4B-EB26A167BAD2</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>9A56D849-5B5A-468D-9675-B106B4E266D8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C1150C33-2C66-496C-A1F7-E0FE38D79DCD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>30A2102A-AD6C-40F8-B4C2-F5EF5B291BAE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DE777701-C3E5-4F5C-B51F-4241A896A12D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A533B797-E4EE-46F6-9D90-7FAC90495E2C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -95,7 +172,7 @@
 				<key>text</key>
 				<string>Failed to resolve the URL</string>
 				<key>title</key>
-				<string>Unravel</string>
+				<string>{var:plugin_name}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
@@ -103,6 +180,29 @@
 			<string>BAB5177E-3C3B-45F5-B7EA-D85BB6C3FD48</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>resolve-url.rb</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>BA2045AE-2450-4740-BA4B-EB26A167BAD2</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -137,14 +237,14 @@
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>resolve-url.rb</string>
+				<string>is-url.rb</string>
 				<key>type</key>
 				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>BA2045AE-2450-4740-BA4B-EB26A167BAD2</string>
+			<string>30A2102A-AD6C-40F8-B4C2-F5EF5B291BAE</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -183,6 +283,88 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string>{var:user_query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>3701670F-91FC-44E1-A463-3E05437264FD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>5</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>true</string>
+						<key>uid</key>
+						<string>E57FB74D-CB8F-4B4E-845B-93B4BB1E1D0F</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>false</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>A533B797-E4EE-46F6-9D90-7FAC90495E2C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.transform</string>
+			<key>uid</key>
+			<string>DE777701-C3E5-4F5C-B51F-4241A896A12D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<true/>
+				<key>variables</key>
+				<dict>
+					<key>user_query</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>C1150C33-2C66-496C-A1F7-E0FE38D79DCD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
@@ -211,12 +393,33 @@
 				<key>text</key>
 				<string>Copied to Clipboard</string>
 				<key>title</key>
-				<string>Unravel</string>
+				<string>{var:plugin_name}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>0263B8E9-4E04-4435-9A05-76B6ED45EDDC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Not a valid URL</string>
+				<key>title</key>
+				<string>{var:plugin_name}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>C9AEC01B-6268-4CA8-AA21-8BF806AED5C5</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -228,50 +431,99 @@
 		<key>0263B8E9-4E04-4435-9A05-76B6ED45EDDC</key>
 		<dict>
 			<key>xpos</key>
-			<real>850</real>
+			<real>1260</real>
 			<key>ypos</key>
-			<real>195</real>
+			<real>255</real>
+		</dict>
+		<key>30A2102A-AD6C-40F8-B4C2-F5EF5B291BAE</key>
+		<dict>
+			<key>note</key>
+			<string>Is URL?</string>
+			<key>xpos</key>
+			<real>335</real>
+			<key>ypos</key>
+			<real>115</real>
+		</dict>
+		<key>3701670F-91FC-44E1-A463-3E05437264FD</key>
+		<dict>
+			<key>xpos</key>
+			<real>655</real>
+			<key>ypos</key>
+			<real>130</real>
 		</dict>
 		<key>7E7A9D9B-1744-437E-8045-1F8E1EDA1D15</key>
 		<dict>
 			<key>xpos</key>
-			<real>660</real>
+			<real>1075</real>
 			<key>ypos</key>
-			<real>195</real>
+			<real>255</real>
 		</dict>
 		<key>8C4121DC-52BF-4433-9FC3-411C493F102E</key>
 		<dict>
 			<key>xpos</key>
-			<real>145</real>
+			<real>40</real>
 			<key>ypos</key>
-			<real>105</real>
+			<real>115</real>
 		</dict>
 		<key>9A56D849-5B5A-468D-9675-B106B4E266D8</key>
 		<dict>
 			<key>xpos</key>
-			<real>530</real>
+			<real>940</real>
 			<key>ypos</key>
-			<real>125</real>
+			<real>120</real>
+		</dict>
+		<key>A533B797-E4EE-46F6-9D90-7FAC90495E2C</key>
+		<dict>
+			<key>xpos</key>
+			<real>575</real>
+			<key>ypos</key>
+			<real>135</real>
 		</dict>
 		<key>BA2045AE-2450-4740-BA4B-EB26A167BAD2</key>
 		<dict>
+			<key>note</key>
+			<string>resolve using unravelurl.com</string>
 			<key>xpos</key>
-			<real>340</real>
+			<real>750</real>
 			<key>ypos</key>
-			<real>105</real>
+			<real>100</real>
 		</dict>
 		<key>BAB5177E-3C3B-45F5-B7EA-D85BB6C3FD48</key>
 		<dict>
 			<key>xpos</key>
-			<real>850</real>
+			<real>1270</real>
 			<key>ypos</key>
-			<real>35</real>
+			<real>85</real>
+		</dict>
+		<key>C1150C33-2C66-496C-A1F7-E0FE38D79DCD</key>
+		<dict>
+			<key>xpos</key>
+			<real>235</real>
+			<key>ypos</key>
+			<real>145</real>
+		</dict>
+		<key>C9AEC01B-6268-4CA8-AA21-8BF806AED5C5</key>
+		<dict>
+			<key>xpos</key>
+			<real>750</real>
+			<key>ypos</key>
+			<real>350</real>
+		</dict>
+		<key>DE777701-C3E5-4F5C-B51F-4241A896A12D</key>
+		<dict>
+			<key>xpos</key>
+			<real>495</real>
+			<key>ypos</key>
+			<real>145</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
 	<array/>
-	<key>variablesdontexport</key>
-	<array/>
+	<key>variables</key>
+	<dict>
+		<key>plugin_name</key>
+		<string>Unravel</string>
+	</dict>
 	<key>version</key>
 	<string>1.0.0</string>
 	<key>webaddress</key>
